@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizzing: border-box;
+}
+
+body {
+    font-family; 'Poppins', san-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+h6 {
+    color: #D8D8D8;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: rgb(255, 255, 255);
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #000000;
+}
+
+.navbar{
+    font-size: 16px;
+    top: 0;
+    left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i: hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active{
+    color:coral;
+}
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor:pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+/* Not working */
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color:#000000;
+}
+
+#bar:hover,
+#bar.active{
+    color:#ffffff;
+}
+
+@media only screen and (max-width: 991px){ /* Not working */
+    body > nav > div > button: hover,
+    body > nav > div > button: focus{
+        background-color: #ffffff;
+    }
+
+    body > nav > div > button: hover #bar,
+    body > nav > div > button: focus #bar{
+        background-color: #ffffff;
+    }
+
+    #navbarSupportedContent > ul{
+       margin: 1rem;
+       justify content: flex-end;
+       align-items: flex-end;
+       text-align: right;
+    }
+
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10 px 0;
+    }
+}
+
+/* Mobile Nav (Not working with issue)*/ 
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+
+#home{
+    background-image: url("background1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span{
+    color:#ffffff /* Not working color */
+}
+
+#home{
+    color:#ffffff
+}
+
+#home{
+    text-shadow:
+     3px  3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+/*Fixed image issue that is not the same size yet not working code. 
+#new .one img{
+    width: 100%
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}*/
+#new .one img {
+    float: left;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    }
+/*Putting a word/text inside the image in the center. NOT WORKING*/
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+/*Putting background color in image. NOT WORKING*/
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 178, 178, 0.7);
+}
+/*NOT WORKING!!!!!!!!!! for the shop to be renew design*/
+#new .one .details button{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a2a2a;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+/*NOT WORKING!!!!!!!!!*/
+#new .one .details button:hover{
+    color: #ffffff
+    border-buttom: 1px solid #ffffff;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+.text{
+    position: absolute;
+    margin-top: 150px;
+    text-shadow:
+    3px  3px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+    color: white;
+}
+.btn{
+    position: absolute;
+    margin-top: 200px;
+    background-color: black;
+    color: white;
+}

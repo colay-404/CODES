@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng"> <!-- language english-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Grading System Calculator</title>
+    <!-- CSS FILE -->
+    <link rel="stylesheet" type="text/css" href="GradingSystem.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="left-box">
+                <h1>result</h1>
+                    <div class="p-g-t"> <!--PGT means Percentage, grade and total-->
+                        <h2>Percentage- <span class="per"></span></h2>
+                        <h2>Grade- <span class="gra"></span></h2>
+                        <h2>Total- <span class="to"></span></h2>
+                    </div>
+            </div>
+                            <div class="content">
+                                <div class="right-box">
+                                    <input type="number" id="SNK" placeholder="Sining ng komunikasyon"/>
+                                    <input type="number" id="FL" placeholder="Foreign language"/>
+                                    <input type="number" id="CP2" placeholder="Computer Programming 2"/>
+                                    <input type="number" id="DLD" placeholder="Digital Logic Design"/>
+                                    <input type="number" id="DM" placeholder="Discrete Mathematics"/>
+                                    <input type="number" id="PE" placeholder="Physical Education"/>
+                                    <input type="number" id="WST" placeholder="Web System and Technologies"/>
+                                    <input type="number" id="NSTP" placeholder="National Service Training Program"/>
+                                        <button type="button" onclick="show_result()">show result</button> </button> <!-- To let the button appear with the text "show result"-->
+                                </div>
+
+                            </div>
+                                            <div class="result">
+                                                <h2></h2>
+                                            </div>
+        </div>
+                                                        <!-- JS FILE-->
+                                                        <script src="GradingSystem.js"></script>
+
+                                                
+                                                        <!-- BACKGROUND FOR GRADING SYSTEM -->
+                                                        <style>
+                                                                body{
+                                                                    margin: 0;
+                                                                    padding: 0;
+                                                                    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+                                                                    url('images/background.jpg');
+                                                                    background-size: cover;
+                                                                    position: relative;
+                                                                    justify-content: center;
+                                                                    }
+                                                        </style>
+    </body>
+</html>

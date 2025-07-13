@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+}
+/* ---- BACK BUTTON -----*/
+
+
+.menu{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    float: right;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 15px;
+    text-align: right;
+   
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    padding: 5px;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+/* ------- END ----- */
+
+.bulb-off{ /*box sa turn on ug turn off*/
+    position: relative;
+    height: 500px;
+    width: 450px;
+}
+
+.bulb-off img{
+    padding: 0;
+    margin: 0;
+    /*height: 680px;
+    width: 900px;
+    margin-top: -100px;
+    background-size: cover;
+    position: absolute;
+    background-position: center; */
+    background-image: url("1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 678px;
+    width: 900px;
+    margin-top: -100px;
+    left: -50%;
+}
+
+/*.bulb-off img{
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    margin-top: -50px;
+}*/
+
+
+.bulb-off label{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: lightslategray;
+}
+
+
+.bulb-off label span{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    border: 2px solid #fff;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bulb-off label span:before{
+    content: "Turn On";
+}
+
+.bulb-off label span:hover{
+    background: #fff;
+    color: #111;
+}
+
+.bulb-off img#on{
+    opacity: 0;
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow{
+    0%{
+        opacity: 1;
+    }
+
+    5%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    74%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: 1;
+    }
+
+    84%{
+        opacity: 0;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+#btn:checked ~ img#on{
+    animation: none;
+}
+
+#btn:checked ~ label span:before{
+    content: "Turn Off";
+}
+
+.bulb-off input{
+    display: none;
+}
